@@ -21,7 +21,7 @@ func NewRestError(message string, err string, code int64, causes []Causes) *Rest
 	}
 }
 
-func (*RestErr) Error() string {
+func (r *RestErr) Error() string {
 	return r.Message
 }
 
