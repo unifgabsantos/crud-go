@@ -7,7 +7,7 @@ import (
 
 // r é um *gin.RouterGroup, ex.: api := router.Group("/api")
 func InitRoutes(r *gin.RouterGroup) {
-	users := r.Group("/users")
+	users := r.Group("/User")
 	{
 		users.GET("/id/:id", controller.FindUserById)
 		users.GET("/email/:email", controller.FindUserByEmail)
