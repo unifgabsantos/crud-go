@@ -2,6 +2,6 @@ package controller
 
 import "github.com/gin-gonic/gin"
 
-func createUser(c *gin.Context) {
+func CreateUser(c *gin.Context) {
 
 }
